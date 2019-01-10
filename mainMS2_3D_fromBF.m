@@ -5,11 +5,7 @@ if manual == true
     clearvars('-except', 'manual') 
     [File,Path] = uigetfile('*.*','select file for name / MAX.tif','/Volumes/JFS/MS2/');
     Name = '_3D_spots/'
-    %Name = '_m5m8peveLacZ_Dl:TTG_blast_3D/'
-    %Name = '_m5m8peveLacZx2_blast_zoom_3D/' ; 
     Nickname='trst'; Rep = 1;
-    %Name = '_test/'
-    %Name = '_eve2_2_blast/'% CHANGE NICKNAME HERE
     mkdir([Path,File,Name])
     PathToSave = [Path,File,Name,File]; 
     show = 'on'
